@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Site Score Card</title>
+    <link rel="stylesheet" type="text/css" href="popup.css" />
+    
+    <script type="text/javascript" src="popup.js"></script>
+  </head>
+  <body>
+    <div class="site-score-card">
+      <div class="loader"></div>
+      <div class="main-con" style="width: 100%">
+        <div class="site-score">
+          <span class="support"><img src="support.png" /></span>
+          <h2>Site Score</h2>
+        </div>
+        <div class="site-details">
+          <h2 class="site-name">www.amazon.co.in</h2>
+        </div>
+        <div
+          class="box"
+          style="
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            align-items: center;
+          "
+        >
+          <h3 class="" style="opacity: 50%; margin-bottom: 5px">
+            <span class="noofpattern"></span> Dark patterns
+          </h3>
+          <div class="progress-bar">
+            <div class="progress"></div>
+          </div>
+          <div class="" style="font-size: 1rem">
+            <span class="score">90</span> /100
+          </div>
+          <ul class="report-data">
+            <li style="font-size: large">
+              <label class="c" for="r">${item}</label>
+            </li>
+          </ul>
+        </div>
+        <div class="report-box">
+          <form class="form-data">
+            <div class="check-box">
+              <input
+                type="checkbox"
+                class="checkbox"
+                id="mal1"
+                name="mal1"
+                value="Disguide Ads"
+              />
+              <label for="mal1">Disguide Ads</label><br />
+            </div>
+            <div class="check-box">
+              <input
+                type="checkbox"
+                class="checkbox"
+                id="mal2"
+                name="mal2"
+                value="Bait and switch"
+              />
+              <label for="mal2">Bait and switch</label><br />
+            </div>
+            <div class="check-box">
+              <input
+                type="checkbox"
+                class="checkbox"
+                id="mal3"
+                name="mal3"
+                value="Forced Continuity"
+              />
+              <label for="mal3">Forced Continuity</label><br />
+            </div>
+            <div class="check-box">
+              <input
+                type="checkbox"
+                class="checkbox"
+                id="mal4"
+                name="mal4"
+                value="Sneak into Basket"
+              />
+              <label for="mal4">Sneak into Basket</label><br />
+            </div>
+            <div class="check-box">
+              <input
+                type="checkbox"
+                class="checkbox"
+                id="mal5"
+                name="mal5"
+                value="Confirm shaming"
+              />
+              <label for="mal5">Confirm shaming</label><br />
+            </div>
+          </form>
+        </div>
+        <a href="#" class="report-link">Report</a>
+        <a href="#"  class="report-link send-report">Send Report</a>
+      </div>
+    </div>
+  </body>
+</html>

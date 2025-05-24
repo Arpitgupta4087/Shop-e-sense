@@ -1,0 +1,224 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.site-score-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    /* padding: 20px; */
+    background-color: #fff;
+
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.site-score {
+    font-size: medium;
+    font-weight: bolder;
+    width: 100%;
+    position: relative;
+    padding: 0.4rem;
+    text-align: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.402);
+}
+
+.support {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80%;
+    background: orange;
+    padding: 0.4rem;
+    border-end-end-radius: 1.2rem;
+
+}
+
+.support img {
+    height: 100%;
+}
+
+.site-score h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.site-logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.site-details {
+    text-align: center;
+    padding: 10px;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    font-weight: 100;
+    width: 100%;
+}
+
+.site-details h2 {
+    font-size: large;
+    color: orange;
+}
+
+.site-name {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.progress-bar {
+    width: 90%;
+    height: 24px;
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.progress {
+    height: 100%;
+    background-color: #4caf50;
+    border-radius: 10px;
+    width: 90%;
+}
+
+.score {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #4caf50;
+    margin-bottom: 20px;
+}
+
+.report-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 3px solid orange;
+    gap: 0.5rem;
+    padding: 1rem 2rem;
+    width: 90%;
+    border-radius: 1rem;
+}
+
+.alerts li {
+    margin: 0 10px 10px 0;
+    padding: 5px 10px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.report-link {
+    display: block;
+    background-color: #FF5963;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 900;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 20px 0;
+
+    letter-spacing: 2px;
+
+}
+
+.report-link:checked {}
+
+.loader {
+
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    /* Safari */
+    animation: spin 2s linear infinite;
+    margin: 2rem;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.main-con {
+    width: 100%;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ritem {
+    font-size: large;
+}
+
+.report-box {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    border: 3px solid orange;
+    gap: 2rem;
+    padding: 0.5rem 0.7rem;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 1rem;
+    font-size: 1.1rem;
+
+}
+
+.send-report {
+    display: none;
+}
+
+.check-box {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.report-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.checkbox {
+    width: 1rem;
+    height: 1rem;
+}
